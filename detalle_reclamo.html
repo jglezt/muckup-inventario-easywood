@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>EasyWood - Reclamos</title>
+    <title>EasyWood - Pedido - Jonas Alexander</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -115,17 +115,6 @@
               <i class="fa fa-bars"></i>
             </button>
 
-            <!-- Topbar Search -->
-            <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-              <div class="input-group">
-                <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
-                <div class="input-group-append">
-                  <button class="btn btn-primary" type="button">
-                    <i class="fas fa-search fa-sm"></i>
-                  </button>
-                </div>
-              </div>
-            </form>
 
             <!-- Topbar Navbar -->
             <ul class="navbar-nav ml-auto">
@@ -294,82 +283,84 @@
           <div class="container-fluid">
 
             <!-- Page Heading -->
-            <h1 class="h3 mb-2 text-gray-800">Reclamos</h1>
-            <div class="card shadow mb-4">
-            <div class="card-body">
-              <div class="table-responsive">
-                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                  <thead>
-                    <tr>
-                      <th>Nombre</th>
-                      <th>Pedido</th>
-                      <th>Motivo</th>
-                      <th>Fecha</th>
-                      <th>Detalle</th>
-                    </tr>
-                  </thead>
-                  <tfoot>
-                    <tr>
-                      <th>Nombre</th>
-                      <th>Pedido</th>
-                      <th>Motivo</th>
-                      <th>Fecha</th>
-                      <th>Estatus</th>
-                      <th>Detalle</th>
-                    </tr>
-                  </tfoot>
-                  <tbody>
-                    <tr>
-                      <td>Jonas Alexander</td>
-                      <td>#324</td>
-                      <td>Mueble dañada</td>
-                      <td>23/11/2019</td>
-                      <td class="bg-info"><p style="color: #fff;">Atendiendo</p></td>
-                      <td><button type="button" class="btn btn-outline-info" onclick="window.location.href = './detalle_reclamo.html';">Acceder</button></td>
-                    </tr>
-                    <tr>
-                      <td>Shad Decker</td>
-                      <td>#532</td>
-                      <td>No llego el envio</td>
-                      <td>23/11/2019</td>
-                      <td class="bg-success"><p style="color: #fff;">Completado</p></td>
-                      <td><button type="button" class="btn btn-outline-info">Acceder</button></td>
-                    </tr>
-                    <tr>
-                      <td>Michael Bruce</td>
-                      <td>
-                        #45
-                      </td>
-                      <td>Mueble dañada</td>
-                      <td>23/11/2019</td>
-                      <td class="bg-success"><p style="color: #fff;">Completado</p></td>
-                      <td><button type="button" class="btn btn-outline-info">Acceder</button></td>
-                    </tr>
-                    <tr>
-                      <td>Donna Snider</td>
-                      <td>#567</td>
-                      <td>Mueble defectuoso</td>
-                      <td>23/11/2019</td>
-                      <td class="bg-success"><p style="color: #fff;">Completado</p></td>
-                      <td><button type="button" class="btn btn-outline-info">Acceder</button></td>
-                    </tr>
-                  </tbody>
-                </table>
+            <div class="d-sm-flex align-items-center justify-content-between mb-4">
+              <h1 class="h3 mb-0 text-gray-800">Reclamo #21 Jonas Alexander</h1>
+              <div class="alert alert-info" role="alert">
+                Atendiendo
+                <td><button type="button" class="btn btn-outline-info">Dar como completado</button></td>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-xl-3 col-md-6 mb-4">
+                <div id="inv_laminas" class="card border-left-success shadow h-100 py-2">
+                  <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                      <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Garantia vigente</div>
+                        <div id="count_laminas" class="h5 mb-0 font-weight-bold text-gray-800">Si</div>
+                      </div>
+                      <div class="col-auto">
+                        <i class="fas fa-search-plus fa-2x text-gray-300"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Content Row -->
+            <div class="row">
+              <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">Conversación</h6>
+                </div>
+                <div class="card-body">
+                  <div class="row">
+                    <div class="table-responsive">
+                      <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                        <thead>
+                          <tr>
+                            <th>Fecha</th>
+                            <th>Texto</th>
+                          </tr>
+                        </thead>
+                        <tfoot>
+                          <tr>
+                            <th>Fecha</th>
+                            <th>Texto</th>
+                          </tr>
+                        </tfoot>
+                        <tbody>
+                          <tr>
+                            <td>21/11/2019</td>
+                            <td><p> Lorem ipsum dolor sit amet, bibendum mattis, laoreet ultricies mattis sed augue lorem. Fusce nisl luctus placerat, ac in ullamco exercitation, et egestas orci. Sit est morbi. Arcu proin, elementum egestas et eu, arcu et non. Amet nonummy mi viverra integer velit, tellus commodo ac urna volutpat sed arcu, in magna est ac morbi eget ut, dignissim integer. Est ut nullam morbi pulvinar, et sagittis faucibus ligula vivamus lorem. Mi nullam nulla in sociis molestie parturient, vestibulum fusce congue quisque rutrum sapien aliquam, id suscipit massa ipsum ut.</p></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    
+                  </div>
+                  <div class="row">
+                    <textarea class="form-control form-control-rounded" id="help_question" rows="8" required="" wfd-id="90"></textarea>
+                  </div>
+                  <div class="row justify-content-center" style="margin-top: 10px;">
+                    <button class="btn btn-outline-info">Contestar</button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-
-          </div>
           <!-- /.container-fluid -->
-
+          
         </div>
         <!-- End of Main Content -->
-
+        
         <!-- Footer -->
         <footer class="sticky-footer bg-white">
           <div class="container my-auto">
             <div class="copyright text-center my-auto">
-              <span>Copyright &copy; Your Website 2019</span>
+              <span>Copyright &copy; EasyWood</span>
             </div>
           </div>
         </footer>
@@ -421,7 +412,6 @@
     <!-- Page level custom scripts -->
     <script src="js/demo/chart-area-demo.js"></script>
     <script src="js/demo/chart-pie-demo.js"></script>
-    <script src="js/demo/chart-bar-demo.js"></script>
 
   </body>
 
